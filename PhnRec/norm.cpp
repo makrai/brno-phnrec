@@ -3,6 +3,9 @@
 #include <assert.h>
 #include <math.h>
 #include <string>
+#include <string.h>
+#include <stdlib.h>
+#include <limits.h>
 
 ChannelNormParams::ChannelNormParams() :
    mFrameLength(0),

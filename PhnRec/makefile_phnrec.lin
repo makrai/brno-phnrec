@@ -1,13 +1,14 @@
 ###############################################################################
 
-BLASLIB  = libmkl_p4.so libguide.so  # if the files are in curr. dir. "export LD_LIBRARY_PATH=."
+#BLASLIB  = libmkl_p4.so libguide.so  # if the files are in curr. dir. "export LD_LIBRARY_PATH=."
 #BLASLIB  = -l cblas -l atlas 
+BLASLIB = -lopenblas
 
 SOUNDLIB = -l pthread                # pthread is used in the LWFSource class
 
 ###############################################################################
 # compiler options
-CFLAGS = -g -I . -DUSE_BLAS -D NN_FAST_EXP -D PHNREC_ONLY -O2
+CFLAGS = -g -I . -DUSE_BLAS -D NN_FAST_EXP -D PHNREC_ONLY -O2 -fpermissive
 CXXFLAGS = $(CFLAGS)
 
 ###############################################################################

@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <assert.h>
+#include <string.h>
 #include "configz.h"
 
 Config::Config() :
